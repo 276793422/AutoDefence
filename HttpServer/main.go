@@ -63,23 +63,4 @@ func Param(c echo.Context) error {
 	}
 
 	return err
-
-	/*
-	var strbody string
-	if v.Type != "Zoo" || v.Msg == "" {
-		strbody = "body error"
-	} else {
-		strbody = "Type = " + v.Type + "\r\nMsg = \r\n" + v.Msg
-	}
-
-	return c.String(http.StatusOK,
-		"Param : " + time.Now().String() + "\r\n" +
-		"QueryString : " + c.QueryString() + "\r\n" +
-		"RealIP : " + c.RealIP()+ "\r\n" +
-		"Scheme : " + c.Scheme() + "\r\n" +
-		"url : " + req.URL.Path + "\r\n" +
-		"uri : " + req.RequestURI + "\r\n" +
-		"Path : " + c.Path() + "\r\n\r\n" +
-		"Body : \r\n" + strbody)
-	*/
 }
